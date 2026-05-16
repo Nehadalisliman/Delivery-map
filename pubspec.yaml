@@ -1,0 +1,37 @@
+name: map_page
+description: "A new Flutter project."
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0' # تم ضبطها لتتوافق مع إصدارات المكتبات المستقرة
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+
+  # --- مكتبات الفايربيز الأساسية ---
+  firebase_core: ^2.24.0        # المكتبة الأم لتشغيل الفايربيز
+  cloud_firestore: ^4.14.0      # للتعامل مع قاعدة البيانات المباشرة لايف
+
+  # --- مكتبات الخرائط والملاحة ---
+  latlong2: ^0.9.1              # مكتبة الحسابات الجغرافية
+  dio: ^5.4.0                   # لطلب الـ APIs الخارجية (رسم المسار والبحث)
+  location: ^5.0.3              # لجلب لوكيشن الموبايل والـ GPS
+
+  # --- مكتبات إضافية احترافية ---
+  cached_network_image: ^3.3.1  # لعرض وتخزين الصور مؤقتاً
+  flutter_bloc: ^8.1.3          # لإدارة الحالة باستخدام الـ Cubit
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+  flutter_map: ^6.1.0
+  get_it: ^8.0.0 # أو آخر إصدار مستقر عندك
+  go_router: ^14.0.0 # أو آخر إصدار مستقر عندك
+
+flutter:
+  uses-material-design: true
